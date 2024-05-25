@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+audio {
+  display: none;
+}
+
+body {
+  /*   background: linear-gradient(-135deg, #FC656C, #11879E); */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.color {
+  /* background: linear-gradient(-45deg, #000000, #000000); */
+}
+ 
+.textShineBlack {
+  background: linear-gradient(to right, rgb(255, 0, 0) 20%, #ff7300 30%, #e100ff 70%, #ff0062 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 7s ease-in-out infinite alternate;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.content
+{
+  text-align: center;
+ 
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200%;
+  }
+}
+.black {
+  background: #000;
+}
+.footer {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.wrapper .file {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0px solid #fff;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  z-index: 2;
+}
+.wrapper .file:hover {
+  opacity: 0.8;
+}
+.wrapper .file input {
+  display: none;
+}
+.wrapper canvas {
+  vertical-align: bottom;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
